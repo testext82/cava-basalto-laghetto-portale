@@ -1,0 +1,37 @@
+CAVA BASALTO LAGHETTO S.R.L. — APP INSTALLABILE (PWA)
+=====================================================
+
+Applicazione web installabile. Pubblicata online, si installa come una
+vera app (icona propria, schermo intero, funziona anche offline).
+I documenti sono file PDF reali nella cartella "documenti": si scaricano
+e si aprono in modo affidabile su telefono e computer.
+
+CONTENUTO
+- index.html ............... l'app
+- manifest.webmanifest ..... definizione app (nome, icona, colori)
+- sw.js .................... service worker (offline)
+- icon-192 / 512 / 512-maskable .png ... icone
+- documenti/ ............... i 3 PDF (Linee Guida, Scheda, Verbale)
+
+PUBBLICARE SU GITHUB PAGES (gratis, ~2 minuti, senza installare nulla)
+1. github.com -> New repository -> nome es. "cava-basalto-app"
+   -> Public -> Create repository.
+2. Nel repo vuoto: link "uploading an existing file".
+   Trascina TUTTO il contenuto di questa cartella MANTENENDO la
+   cartella "documenti" (trascina i file e la cartella documenti).
+   -> Commit changes.
+3. Settings -> Pages -> Source: "Deploy from a branch"
+   -> Branch: main - cartella / (root) -> Save.
+4. Dopo ~1 minuto compare il link pubblico:
+      https://TUO-UTENTE.github.io/cava-basalto-app/
+
+INSTALLARE L'APP
+- iPhone (Safari):  Condividi -> "Aggiungi a schermata Home"
+- Android (Chrome): menu -> "Installa app"
+- PC/Mac (Chrome/Edge): icona "Installa" nella barra indirizzi
+
+NOTE
+- Deve essere pubblicata in HTTPS (GitHub Pages lo e' di default),
+  altrimenti l'installazione non e' disponibile.
+- I moduli "Compila online" si compilano nel browser e si salvano in
+  PDF tramite "Stampa / Salva PDF".
